@@ -1,0 +1,449 @@
+/* fonts */
+
+
+@font-face {
+    font-family: 'Post No Bills Jaffna Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/jaffna/PostNoBillsJaffna-Bold.woff') format('woff');
+}
+
+/* example of fonts
+
+    font-family: 'Playfair Display', serif;
+
+    font-family: 'PT Sans', sans-serif;
+
+*/
+
+/* MAIN RULES */
+
+body {
+    width: auto;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.title {
+    position: relative;
+    padding: 93px 0 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* default title */
+
+.title::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+
+.img-main {
+    display: block;
+}
+
+/* default button */
+
+.button {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: 138px;
+    height: 47px;
+    background-color: transparent;
+    color: #FFFFFF;
+    /* Изначально прописал стили для рамки кнопки через border-color, но сработало коряво - 
+    был перелив в нижней части рамки, будто градиент */
+    border: 1px solid #FFFFFF;
+    /* запомни! кнопка - строчный элемент */
+    display: block;
+    margin: 0 auto;
+}
+
+.button:hover {
+    color: orangered;
+    border: 2px solid black;
+    transition: border 0.8s ease;
+    cursor: pointer;
+}
+
+/*_____________________________________________________*/
+
+/*HEADER BLOCK*/
+
+
+/* SUP-HEADER BLOCK */
+
+.sup-header__header-shop {
+    background-color: #000000;
+    width: 100%;
+}
+
+.info__sup-header {
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+
+/* text */
+
+.textall {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+/*blocks of MAIN INFORMATION*/
+
+/*icons inside links*/
+
+.main-information__info, .log-reg__info {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.icon-block__link {
+    margin-top: 2px;
+}
+
+.entry-icon {
+    position: absolute;
+    top: 43%;
+    left: -2.1%;
+}
+
+
+
+/* link of LOG-REG */
+
+.link__log-reg, .link__main-information {
+    display: flex;
+    text-decoration: none;
+}
+
+/* Оранжевый цвет текста при клике */
+
+.link__main-information:active .call-us__text {
+    color: orangered;
+}
+
+.link__log-reg:active .login__text {
+    color: orangered;
+}
+
+
+
+/*_________________________________________*/
+
+/*SUB-HEADER BLOCK*/
+
+.sub-header__header-shop {
+    width: 100%;
+    background-color: #0F0F0F;
+    color: white;
+}
+
+.sub-header__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+/*flex items of sub-header--inner*/
+
+.menu__sub-header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+}
+
+/*LOGO*/
+
+.logo__sub-header {
+    font-family: 'Post No Bills Jaffna Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+/*MENU*/
+
+
+/*first section of menu*/
+
+.option-text {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #969696;
+    padding: 31px 20px;
+    text-decoration: none;
+}
+
+.option-text:hover {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+}
+
+
+.section0__menu {
+    display: flex;
+    flex-direction: row;   
+}
+
+/*second section of menu*/
+
+.section1__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon0__section1 {
+    margin-right: 44.58px;
+    margin-left: 41.83px;
+}
+
+/*links of menu*/
+
+.icon0__link {
+    display: block;
+    position: relative;
+}
+
+.tire0, .tire1 {
+    position: absolute;
+}
+
+.tire0 {
+    left: 70%;
+}
+
+.tire1 {
+    left: 35%;
+}
+
+/*END OF HEADER BLOCK*/
+
+/*----------------------------------------------------------------------*/
+
+/*PORTEN MAIN BLOCK*/
+
+.porten-main__wrapper {
+    width: 100%;
+    height: 810px;
+    background: url(immages/first_block_background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.item__porten-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    
+}
+
+/*CENTRAL SQUARE*/
+
+.square__item {
+    height: 320px;
+    width: 320px;
+    border: 4px solid #FFFFFF;
+    margin-top: 160px;
+    text-align: center;
+    padding-top: 77px;
+}
+
+.big-title__square {
+    font-family: 'Post No Bills Jaffna Bold';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 96px;
+    font-size: 64px;
+    margin-top: 7px;
+    
+}
+
+.big-text__square {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 11px;
+    width: 185px;
+    border-top: 2px solid #FFFFFF;
+     /* чтобы выровнять вместе со всем по центру пользуясь 
+    text-align: center; */
+    display: inline;
+}
+
+/*DESCRIPTION*/
+
+.description__item {
+    width: 730px;
+    height: 98px;
+    margin-top: 80px;
+}
+
+.text__description {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/* SEZON2020 BLOCK */
+
+.sezon2020__wrapper {
+    height: 730px;
+    display: flex;
+    flex-wrap: nowrap;color: #FFFFFF;
+}
+
+/* products (sezon2020) */
+
+.products__sezon2020 {
+    height: 100%;
+    width: 1040px;
+    background-color: #000000;
+    padding: 0 80px;
+}
+
+.items__products {
+    display: grid;
+    grid-template: 1fr / 260px 260px 260px;
+    column-gap: 50px;
+    
+}
+
+.title__products {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* clock item (items-products) */
+
+.clock-main__items {
+    width: 260px;
+    height: 325px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.img-block__clock-main {
+    width: 260px;
+    height: 325px;
+    background-color: #191B1C;
+    position: relative;
+}
+
+/* titles */
+
+.sup-title__clock-main {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px; 
+    margin: 25px 0 10px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.sub-title__clock-main {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+/* immage */
+
+.img__clock {
+    width: 215px;
+    height: 214px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* new-collection (sezon2020) */
+
+.new-collection__sezon2020 {
+    height: 100%;
+    width: 880px;
+    background: url(immages/second_block_men.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* title */
+
+.title__new-collection {
+    margin-bottom: 30px;
+    padding: 484px 0 30px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* может быть на досуге добавить к блоку items products Эффекты при наведении и переделать в ссылки */
